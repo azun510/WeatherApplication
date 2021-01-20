@@ -6,3 +6,4 @@ Using the helpful techniques such as fetch() we are able to access information f
 This task allowed us to learn how to compose our skills and focus on the javascript side of the code.
 
 ### Example of the Website
+![Screenshot](./assets/weatherSite.png)

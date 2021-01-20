@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+    background-color: lightgray;
+}
+
+.boxborder {
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+}

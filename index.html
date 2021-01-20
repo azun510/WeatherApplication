@@ -3,9 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
 </head>
 <body>
+    <h1>Weather Dashboard</h1>
+
+    <main class="flex-row justify-space-between">
+        <div class="col-12 col-md-4">
     
+          <div class="card">
+            <h3 class="card-header text-uppercase">Search For A City:</h3>
+            <form id="user-form" class="card-body">
+              <input name="City" id="CitySearch" type="text" autofocus="true" class="form-input" />
+              <button type="submit" id="searchWeather" class="btn">🔍</button>
+            </form>
+            </div>
+            <form id="searchHistory"></form>
+          </div>
+        </div>
+    </main>
+    <!-- Start Forecast -->
+    <div class="row">
+        <div class="col-12">
+            <div class="boxborder">
+                <div class="row">
+                    <div class="col-12 m-3">
+                        <span id="cityinput">City Name:</span>
+                        <span class="weather-condition fs-3" id="weatherdisplay"></span> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 m-3 fs-4">
+                        <p id="Temp">Temperature:</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 m-3 fs-4">
+                        <p id="Humidity">Humidity:</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 m-3 fs-4">
+                        <p id="WindSpeed">Wind Speed: </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 m-3 fs-4 ">
+                        <p id="UVIndex">UV Index: </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12">
+                <p>5-Day Forecast</p>
+            </div>
+        </div>
+
+        <!-- 5 Day Forecast -->
+        <div class="row m-1">
+            <div class="col bg-primary text-white ml-3"></div>
+            <div class="col bg-primary text-white ml-3"></div>
+            <div class="col bg-primary text-white ml-3"></div>
+            <div class="col bg-primary text-white ml-3"></div>
+            <div class="col bg-primary text-white ml-3"></div>
+        </div>
+    </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="./assets/js/script.js"></script>
 </html>

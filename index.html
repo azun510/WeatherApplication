@@ -23,37 +23,20 @@
             </form>
         </div>
     <!-- Start Forecast -->
-    <div class="row">
-        <div class="col-12">
-            <div class="boxborder">
-                <div class="row">
-                    <div class="col-12 m-3">
-                        <span id="cityinput">City Name:</span>
-                        <span class="weather-condition fs-3" id="weatherdisplay"></span> 
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 m-3 fs-4">
-                        <p id="Temp">Temperature:</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 m-3 fs-4">
-                        <p id="Humidity">Humidity:</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 m-3 fs-4">
-                        <p id="WindSpeed">Wind Speed: </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 m-3 fs-4 ">
-                        <p id="UVIndex">UV Index: </p>
-                    </div>
+    <div id="weather">
+        <div class="column" id="city-info">
+            <h2 class="subtitle" id="city-search-term"></h2>
+            <div id="city-container" class="list-group">
+                <div id="date"></div>
+                <img id="weather-icon"></div>
+                <div id="feels-like"></div>
+                <div id="humidity"></div>
+                <div id="wind-speed"></div>
+                <div>
+                    <span id="UV"></span>
                 </div>
             </div>
-        </div>
+            
         <div class="row mt-3">
             <div class="col-12">
                 <p>5-Day Forecast</p>

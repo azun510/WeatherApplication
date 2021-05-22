@@ -10,22 +10,18 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
 </head>
 <body>
-    <h1>Weather Dashboard</h1>
-
-    <main class="flex-row justify-space-between">
-        <div class="col-12 col-md-4">
-    
-          <div class="card">
-            <h3 class="card-header text-uppercase">Search For A City:</h3>
-            <form id="user-form" class="card-body">
-              <input name="City" id="CitySearch" type="text" autofocus="true" class="form-input" />
-              <button type="submit" id="searchWeather" class="btn">🔍</button>
+    h1>Weather Dashboard</h1>
+    </header>
+    <main class="container">
+        <div class="col-2" id="search-section">
+            <form class="card-body">
+                <label class="form-label" for="city-search"> Search for a City:</label>
+                <br>
+                <input name="city" id="city" type="text" class="form-input"/>
+                <button type="submit" class="btn">Search</button>
+                <div id="city-list"></div>
             </form>
-            </div>
-            <form id="searchHistory"></form>
-          </div>
         </div>
-    </main>
     <!-- Start Forecast -->
     <div class="row">
         <div class="col-12">

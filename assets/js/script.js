@@ -161,3 +161,35 @@ var getCityWeather = function (city) {
     });
   });
 };
+
+// get user's city from the <input> element and send to function getUserRepos()
+var formSubmitHandler = function (event) {
+  event.preventDefault();
+
+  var list = JSON.parse(localStorage.getItem("cityHistory")) || [];
+
+  var searchCity = cityInputEl.value.trim();
+  console.log(searchCity);
+  if (searchCity) {
+    getCityWeather(searchCity);
+    cityInputEl.value = "";
+    list.push(searchCity);
+    localStorage.setItem("cityHistory", JSON.stringify(list));
+  }
+
+  for (var i = 0; i < list.length; i++) {
+    var el = document.createElement("a");
+    el.classList = "list-item flex-row justify-space-between";
+    el.textContent = list[i];
+    el.setAttribute("href", "./index.html");
+    document.querySelector("#city-list").appendChild(el);
+  }
+};
+
+var displayWeather = function (response, searchTerm) {
+  var citySearchTerm = document.querySelector("#city-search-term");
+  console.log(searchTerm);
+  citySearchTerm.textContent = searchTerm;
+};
+
+userFormEl.addEventListener("submit", formSubmitHandler);

@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Weather Dashboard</title>
 </head>
+
 <body>
-    h1>Weather Dashboard</h1>
+    <header>
+        <h1>Weather Dashboard</h1>
     </header>
     <main class="container">
         <div class="col-2" id="search-section">
@@ -22,22 +25,21 @@
                 <div id="city-list"></div>
             </form>
         </div>
-    <!-- Start Forecast -->
-    <div id="weather">
-        <div class="column" id="city-info">
-            <h2 class="subtitle" id="city-search-term"></h2>
-            <div id="city-container" class="list-group">
-                <div id="date"></div>
-                <img id="weather-icon"></div>
-                <div id="feels-like"></div>
-                <div id="humidity"></div>
-                <div id="wind-speed"></div>
-                <div>
-                    <span id="UV"></span>
+        <div id="weather">
+            <div class="column" id="city-info">
+                <h2 class="subtitle" id="city-search-term"></h2>
+                <div id="city-container" class="list-group">
+                    <div id="date"></div>
+                    <img id="weather-icon"></div>
+                    <div id="feels-like"></div>
+                    <div id="humidity"></div>
+                    <div id="wind-speed"></div>
+                    <div>
+                        <span id="UV"></span>
+                    </div>
                 </div>
-            </div>
-
-        <div class="column">
+            
+            <div class="column">
                 <h3 id="forecast-title"></h3>
                 <div class="row">
                     <div id="day-1" class="box">
@@ -73,8 +75,6 @@
                 </div>
             </div>
     </main>
+    <script src="./assets/js/script.js"></script>
 </body>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<script src="./assets/js/script.js"></script>
 </html>

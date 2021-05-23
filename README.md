@@ -5,5 +5,8 @@ This weeks challenge involved applying our skills to compose a website that woul
 Using the helpful techniques such as fetch() we are able to access information from other sources and apply them to our very own website.  
 This task allowed us to learn how to compose our skills and focus on the javascript side of the code.
 
+### Site
+https://azun510.github.io/WeatherApplication/
+
 ### Example of the Website
 ![Screenshot](./assets/weatherSite.png)
